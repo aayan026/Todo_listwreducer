@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.undoButton {
+  position: fixed;
+  padding: 40px;
+  background-color: rgba(202, 202, 201, 0.247);
+  left: 20px;          
+  top: 87%;
+  transform: translateY(-50%);
+  border-radius: 15px;
+  
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+.undoButton button{
+  background-color: white;
+}
