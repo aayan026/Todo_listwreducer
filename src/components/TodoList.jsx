@@ -1,7 +1,7 @@
 import { useContext,useEffect, useState } from "react"
 import { MyContext } from "../App"
 import TodoListItem from "./TodoListItem"
-
+import {Link} from "react-router-dom"
 function TodoList(){
     
     const {state,dispatch}=useContext(MyContext)
@@ -28,6 +28,7 @@ function TodoList(){
                 <button onClick={()=>setShowUndo(false)}>Dismiss</button>
                 </>)}
             </div>
+            <Link to="/completedTodos">Completed</Link>
         </main>
     )
 }

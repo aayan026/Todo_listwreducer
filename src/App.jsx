@@ -2,6 +2,7 @@ import { createContext, useReducer, useState } from 'react'
 import './App.css'
 import { initialState, reducer } from './reducer/arrReducer'
 import TodoList from './components/TodoList'
+import { Outlet } from 'react-router-dom'
 
 export const MyContext=createContext()
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <MyContext value={{state,dispatch}}>
-        <TodoList/>
+        <Outlet/>
       </MyContext>
     </>
   )
